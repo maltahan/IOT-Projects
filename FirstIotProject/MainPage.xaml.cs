@@ -30,9 +30,9 @@ namespace FirstIotProject
 
         private void ClickMe_Click(object sender, RoutedEventArgs e)
         {
-            this.HelloMessage.Text = "Hello, Windows 10 IoT Core1!";
+            this.HelloMessage.Text = "Hello, Windows 10 IoT Core2!";
 
-           
+            var device = new DigitalActuator();
         }
     }
 }
