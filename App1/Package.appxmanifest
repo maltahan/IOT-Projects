@@ -1,21 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Package
+    xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+
   IgnorableNamespaces="uap mp iot">
 
   <Identity
-    Name="c4731bef-1da5-4e48-9917-0630b47e4e09"
+    Name="0b7b36e9-4a41-4ad7-b1e4-71b38ade82be"
     Publisher="CN=Fatima"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="c4731bef-1da5-4e48-9917-0630b47e4e09" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="0b7b36e9-4a41-4ad7-b1e4-71b38ade82be" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>FirstIotProject</DisplayName>
+    <DisplayName>App1</DisplayName>
     <PublisherDisplayName>Fatima</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -31,12 +32,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="FirstIotProject.App">
+      EntryPoint="App1.App">
       <uap:VisualElements
-        DisplayName="FirstIotProject"
+        DisplayName="App1"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="FirstIotProject"
+        Description="App1"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
@@ -45,7 +46,7 @@
   </Applications>
 
   <Capabilities>
+    <iot:Capability Name="systemManagement" />
     <Capability Name="internetClient" />
-    <iot:Capability Name="systemManagement"/>
   </Capabilities>
 </Package>
